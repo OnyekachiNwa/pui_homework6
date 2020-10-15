@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
+
+html {
+  /*background-color: #E4DBD4;*/
+  background: linear-gradient(to right, #E4DBD4 70%, white 30%);
+  font-family: "Roboto", sans-serif;
+}
+
+#logo {
+  position: relative;
+  top:3%; left:13%;
+}
+
+#logotext {
+  position: absolute;
+  top: 4%; left: 20%;
+}
+
+#thecart {
+  display: grid;
+  grid-template-columns: 600px;
+  grid-template-rows: 100px 100px 100px;
+  grid-gap: 10px;
+}
+
+.oneitem {
+  background-color: gray;
+  display: grid;
+  grid-template-columns: 100px 200px 300px;
+  grid-template-rows: 100px;
+  grid-gap: 10px;
+}
+
+.image {
+  background-image: url("images/TheOriginalBun.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.edit, .glaze {
+  font-size: 12px;
+  font-weight: 100;
+}
+
+h2 {
+  font-weight: 100;
+  margin-bottom: 0;
+}
+
+.calltoaction {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  grid-template-rows: 100px;
+  grid-gap: 10px;
+  justify-content: center;
+}
+
+#keepshopping {
+  border-style: solid;
+  border-color: #F0EFCC;
+  border-width: medium;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#proceed {
+  background-color: #F0EFCC;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  width: 100%;
+  height: 2rem;
+
+  font-size: 16px;
+  color: #B49984;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  bottom: 0%;
+}
+
+#productfooter {
+  color: #B49984;
+  text-decoration: none;
+}
+
+#productfooter:visited, #productfooter:active {
+  text-decoration: none;
+}

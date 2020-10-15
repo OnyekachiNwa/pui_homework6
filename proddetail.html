@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Product Details</title>
+    <link rel="stylesheet" type="text/css" href="proddetails.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <header>
+      <a id="logo" href="index.html">
+        <img src="images/logo.png" alt="bun bun image" width="68px" height="68px">
+      </a>
+
+      <a id="logotext" href="index.html">
+        <img src="images/bunbuntext.png" alt="bun bun logo text" height="30px">
+      </a>
+    </header>
+
+    <!--product detail box-->
+    <div id="detail">
+      <!--image of bun-->
+      <div id="ogbunBIGimage"></div>
+      <!--all text div and exit-->
+      <div id="text">
+        <a id="exit" href="productspage.html">x</a><br>
+        <h1>The Original Bun</h1>
+        <p1>The famous Original Bun is a delicacy that warms<br>
+          any palate with rich, deep, cinnamon spices and<br>
+          sugary overtones. This delicious bun will bring joy to<br>
+          your appetite, while adding a little spice to your day.</p1>
+        <h2>Ingredients<h2>
+        <p2>Milk, Eggs, Salted Butter, Flour, Brown Sugar,<br>
+          Cinnamon, Maple</p2>
+        <h3>$2.46</h3>
+          <!--drop down and add to cart div-->
+          <div class="prodinfo">
+          <!--qty dropdown-->
+          <label for="quantity">Quantity</label>
+            <select name="quantity" class="quantity" required>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+            </select> <br>
+            <!--glaze dropdown-->
+            <label for="glaze">Glaze</label>
+              <select name="glaze" class="glaze" required>
+                <option value="none">None</option>
+                <option value="sugarmilk">Sugar-milk</option>
+                <option value="vanillamilk">Vanilla-milk</option>
+                <option value="doublechocolate">Double-chocolate</option>
+              </select><br>
+            <a id="addtocart" href="yourcart.html">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <span> Our Story |</span>
+      <span> Location |</span>
+      <span> Ingredients |</span>
+      <a id="productfooter" href="productspage.html"> Products |</a>
+      <span> Contact |</span>
+      <span> Help </span>
+    </footer>
+  </body>
+</html>

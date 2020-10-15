@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
+
+html {
+  background-color: #E4DBD4;
+  font-family: "Roboto", sans-serif;
+  background-image: url('images/productdetails.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: contain;
+}
+
+#logo {
+  position: relative;
+  top:3%; left:13%;
+}
+
+#logotext {
+  position: absolute;
+  top: 4%; left: 20%;
+}
+
+#detail {
+  display: grid;
+  grid-template-columns: 500px 300px;
+  justify-content: center;
+  filter: drop-shadow(-5px 5px 5px #828282);
+}
+
+#ogbunBIGimage {
+  background-image: url("images/TheOriginalBun.jpg");
+  width: 500px;
+  height: 500px;
+  background-size: cover;
+}
+
+#exit {
+  font-weight: 100;
+  font-size: 20px;
+  text-decoration: none;
+  position: relative;
+  left: 93%;
+}
+
+#exit:visited, #exit:active {
+  color: black;
+  text-decoration: none;
+}
+
+#text {
+  background-color: #B49984;
+  padding: 10px;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+p1 {
+  font-size: 12px;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+p2 {
+  font-size: 12px;
+  font-weight: 100;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 900;
+  text-align: right;
+}
+
+.prodinfo {
+  background-color: #B49984;
+  padding-top: 5px;
+  height: 100px;
+  font-weight: 100;
+  text-align: center;
+}
+
+select {
+  font-weight: 100;
+  appearance: none;
+  border: none;
+  width: 50%;
+  outline-style: none;
+  margin-top: 5px;
+}
+
+#addtocart {
+  background-color: #F0EFCC;
+  padding: 10px;
+  padding-left: 45px; padding-right: 45px;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+
+  position: fixed;
+  top: 90%;
+  right: 25%;
+}
+
+.footer {
+  width: 100%;
+  height: 2rem;
+
+  font-size: 16px;
+  color: #B49984;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  bottom: 0%;
+}
+
+#productfooter {
+  color: #B49984;
+  text-decoration: none;
+}
+
+#productfooter:visited, #productfooter:active {
+  text-decoration: none;
+}
