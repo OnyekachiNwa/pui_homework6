@@ -16,9 +16,38 @@ html {
   top: 4%; left: 20%;
 }
 
+/* Style the links inside the navigation bar */
+.topnavbar a {
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  padding: 5%;
+  font-size: 12px;
+  font-weight: 100;
+  color: black;
+}
+
+hr {
+  border: 0;
+  border-color: black;
+  width: 50%;
+  height: 0;
+  border-top: 1px solid black;
+}
+
+.navpages {
+}
+
+#maingrid {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-gap: 10px;
+  justify-content: center;
+}
+
 #thecart {
   display: grid;
-  grid-template-columns: 600px;
+  grid-template-columns: 100%;
   grid-template-rows: 100px 100px 100px;
   grid-gap: 10px;
 }
@@ -26,7 +55,7 @@ html {
 .oneitem {
   background-color: gray;
   display: grid;
-  grid-template-columns: 100px 200px 300px;
+  grid-template-columns: 20% 30% 50%;
   grid-template-rows: 100px;
   grid-gap: 10px;
 }
@@ -40,6 +69,11 @@ html {
 .edit, .glaze {
   font-size: 12px;
   font-weight: 100;
+}
+
+.editside {
+  text-align: right;
+  padding-right: 30px;
 }
 
 h2 {
@@ -73,16 +107,30 @@ h2 {
   align-items: center;
 }
 
+#cartsummary {
+  background-color: pink;
+  display: grid;
+  grid-template-rows: auto auto auto auto auto auto;
+  padding: 3%;
+  font-weight: 100;
+}
+
+#subtitle {
+  text-align: right;
+  font-weight: 100;
+}
+
 .footer {
-  width: 100%;
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px 200px 200px;
+  grid-template-rows: 100px;
   height: 2rem;
+  justify-content: center;
+  align-items: center;
 
   font-size: 16px;
   color: #B49984;
-  align-items: center;
-  text-align: center;
-  position: fixed;
-  bottom: 0%;
+  margin-top: 100px;
 }
 
 #productfooter {
