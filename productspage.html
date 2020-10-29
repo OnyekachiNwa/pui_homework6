@@ -4,10 +4,55 @@
     <meta charset="utf-8">
     <title>Product Page</title>
     <link rel="stylesheet" type="text/css" href="productspage.css">
+    <script type="text/javascript" src="hw6.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <script>
+      var product1 = {
+        price: 3.19,
+        name: "The Original Bun",
+        id: "ogbun",
+      };
+
+      var product2 = {
+        price: 3.19,
+        name: "Blackberry",
+        id: "blackberry",
+      };
+
+      var product3 = {
+        price: 3.19,
+        name: "Walnut",
+        id: "walnut",
+      };
+
+      var product4 = {
+        price: 3.49,
+        name: "The Original (Gluten-Free)",
+        id: "glutenfree",
+      };
+
+      var product5 = {
+        price: 3.19,
+        name: "Pumpkin Spice",
+        id: "pumpkinspice",
+      };
+
+      var product6 = {
+        price: 3.19,
+        name: "Caramel Pecan",
+        id: "caramelpecan",
+      };
+
+      localStorage.setItem(product1.id, JSON.stringify(product1));
+      localStorage.setItem(product2.id, JSON.stringify(product2));
+      localStorage.setItem(product3.id, JSON.stringify(product3));
+      localStorage.setItem(product4.id, JSON.stringify(product4));
+      localStorage.setItem(product5.id, JSON.stringify(product5));
+      localStorage.setItem(product6.id, JSON.stringify(product6));
+    </script>
   </head>
 
-  <body>
+  <body onload="linkingPages()">
     <header>
       <a id="logo" href="index.html">
         <img src="images/logo.png" alt="bun bun image" width="68px" height="68px">
@@ -19,13 +64,14 @@
     </header>
 
     <main>
+
       <div id="products">
         <!--entire single product box-->
         <div class="singleproduct">
           <!--image and show more div-->
           <div class="prodimage" id="ogbun">
               <span class="showmore">Show more</span>
-              <a class="showmorebutton" href="proddetail.html">+</a>
+              <a class="showmorebutton" href="proddetail.html?ogbun">+</a>
               <p class="p1">The Original Bun</p>
               <p class="p2">$3.19</p>
           </div>
@@ -64,7 +110,7 @@
           <!--image and showmore box-->
           <div class="prodimage" id="blackberry">
             <span class="showmore">Show more</span>
-            <a class="showmorebutton" href="prod_detail.html">+</a>
+            <a class="showmorebutton" href="proddetail.html?blackberry">+</a>
             <p class="p1">Blackberry</p>
             <p class="p2">$3.19</p>
           </div>
@@ -103,7 +149,7 @@
         <div class="singleproduct">
           <div class="prodimage" id="walnut">
             <span class="showmore">Show more</span>
-            <a class="showmorebutton" href="prod_detail.html">+</a>
+            <a class="showmorebutton" href="proddetail.html?walnut">+</a>
             <p class="p1">Walnut</p>
             <p class="p2">$3.19</p>
           </div>
@@ -141,7 +187,7 @@
         <div class="singleproduct">
           <div class="prodimage" id="glutenfree">
             <span class="showmore">Show more</span>
-            <a class="showmorebutton" href="prod_detail.html">+</a>
+            <a class="showmorebutton" href="proddetail.html?glutenfree">+</a>
             <p class="p1">The Original Bun<br> (Gluten Free)</p>
             <p class="p2">$3.40</p>
           </div>
@@ -179,7 +225,7 @@
         <div class="singleproduct">
           <div class="prodimage" id="pumpkinspice">
             <span class="showmore">Show more</span>
-            <a class="showmorebutton" href="prod_detail.html">+</a>
+            <a class="showmorebutton" href="proddetail.html?pumpkinspice">+</a>
             <p class="p1">Pumpin Spice</p>
             <p class="p2">$3.19</p>
           </div>
@@ -217,7 +263,7 @@
         <div class="singleproduct">
           <div class="prodimage" id="caramelpecan">
             <span class="showmore">Show more</span>
-            <a class="showmorebutton" href="prod_detail.html">+</a>
+            <a class="showmorebutton" href="proddetail.html?caramelpecan">+</a>
             <p class="p1">Caramel Pecan</p>
             <p class="p2">$3.19</p>
           </div>

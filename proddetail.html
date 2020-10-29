@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <title>Product Details</title>
     <link rel="stylesheet" type="text/css" href="proddetails.css">
-    <script type="text/javascript" src="productdetail.js"></script>
+    <script type="text/javascript" src="hw6.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
   </head>
 
-  <body>
+  <body onload="linkingPages()">
 
     <header>
       <a id="logo" href="index.html">
@@ -18,6 +18,18 @@
       <a id="logotext" href="index.html">
         <img src="images/bunbuntext.png" alt="bun bun logo text" height="30px">
       </a>
+
+      <div id="carticon">
+        <img src="images/paperbag_noun.png" alt="cart icon" height="30px">
+      </div>
+
+      <p1 id="cartTotal"></p1>
+
+      <div id="linedivider"> | </div>
+
+      <div id="hamburgermenu">
+        <img src="images/hamburgermenu.png" alt="hamburger menu" height="25px">
+      </div>
     </header>
 
     <!--product detail box-->
@@ -26,21 +38,24 @@
       <div id="ogbunBIGimage"></div>
       <!--all text div and exit-->
       <div id="text">
+        <!--<h2 id="productdesc"></h2>-->
         <a id="exit" href="productspage.html">x</a><br>
-        <h1>The Original Bun</h1>
-        <p1>The famous Original Bun is a delicacy that warms<br>
-          any palate with rich, deep, cinnamon spices and<br>
-          sugary overtones. This delicious bun will bring joy to<br>
-          your appetite, while adding a little spice to your day.</p1>
-        <h2>Ingredients<h2>
-        <p2>Milk, Eggs, Salted Butter, Flour, Brown Sugar,<br>
-          Cinnamon, Maple</p2>
-        <h3>$2.46</h3>
+        <h1 id="productname">The Original Bun</h1>
+        <div id="productdesc">
+          <p1> This flavorful bun is a delicacy that warms<br>
+            any palate with rich, deep, cinnamon spices and<br>
+            sugary overtones. This delicious bun will bring joy to<br>
+            your appetite, while adding a little spice to your day.</p1>
+          <h2>Ingredients<h2>
+          <p2>Milk, Eggs, Salted Butter, Flour, Brown Sugar,<br>
+            Cinnamon, Maple</p2>
+        </div>
+        <h3 id="productprice"></h3>
           <!--drop down and add to cart div-->
           <div class="prodinfo">
           <!--qty dropdown-->
           <label for="quantity">Quantity</label>
-            <select name="quantity" id="quantitydropdown" class="quantity" required>
+            <select name="quantity" id="quantitydropdown" class="quantity" required> <!--type="number"??-->
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -53,7 +68,7 @@
               <option value="10">10</option>
               <option value="11">11</option>
               <option value="12">12</option>
-            </select> <br>
+            </select><br>
             <!--glaze dropdown-->
             <label for="glaze">Glaze</label>
               <select name="glaze" id="glazedropdown" class="glaze" required>
@@ -62,7 +77,8 @@
                 <option value="vanilla-milk">Vanilla-milk</option>
                 <option value="double-chocolate">Double-chocolate</option>
               </select><br>
-            <a id="addtocart" href="yourcart.html" onclick="addToCart()">Add to Cart</a>
+              <!--href="yourcart.html"-->
+            <a id="addtocart" onclick="addToCart()">Add to Cart</a>
         </div>
       </div>
     </div>
