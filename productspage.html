@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Product Page</title>
     <link rel="stylesheet" type="text/css" href="productspage.css">
-    <script type="text/javascript" src="hw6.js"></script>
+    <script src="hw6.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <script>
       var product1 = {
@@ -55,12 +55,26 @@
   <body onload="linkingPages()">
     <header>
       <a id="logo" href="index.html">
-        <img src="images/logo.png" alt="bun bun image" width="68px" height="68px">
+        <img id="logoimage" src="images/logo.png" alt="bun bun image">
       </a>
 
       <a id="logotext" href="index.html">
-        <img src="images/bunbuntext.png" alt="bun bun logo text" height="30px">
+        <img id="bunbunbakeshop" src="images/bunbuntext.png" alt="bun bun logo text">
       </a>
+
+      <div id="carticon">
+        <a href="yourcart.html">
+          <img src="images/paperbag_noun.png" alt="cart icon" height=30>
+        </a>
+      </div>
+
+      <span id="cartTotal"></span>
+
+      <div id="linedivider"> | </div>
+
+      <div id="hamburgermenu">
+        <img src="images/hamburgermenu.png" alt="hamburger menu" height=25>
+      </div>
     </header>
 
     <main>
@@ -70,38 +84,15 @@
         <div class="singleproduct">
           <!--image and show more div-->
           <div class="prodimage" id="ogbun">
-              <span class="showmore">Show more</span>
-              <a class="showmorebutton" href="proddetail.html?ogbun">+</a>
-              <p class="p1">The Original Bun</p>
-              <p class="p2">$3.19</p>
+            <p class="p1">The Original Bun</p>
+            <p class="p2">$3.19</p>
           </div>
-          <!--drop down divs-->
+          <!--dropdown divs-->
           <div class="prodinfo">
-            <!--qty dropdown-->
-            <label for="quantity">Quantity</label>
-              <select name="quantity" class="quantity" required>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-              </select> <br>
-              <!--glaze dropdown-->
-              <label for="glaze">Glaze</label>
-                <select name="glaze" class="glaze" required>
-                  <option value="none">None</option>
-                  <option value="sugarmilk">Sugar-milk</option>
-                  <option value="vanillamilk">Vanilla-milk</option>
-                  <option value="doublechocolate">Double-chocolate</option>
-                </select><br>
-              <a class="addtocart" href="">Add to Cart</a>
+            <span class="showmore">Show more</span>
+            <div>
+              <a class="showmorebutton" href="proddetail.html?ogbun">+</a>
+            </div>
           </div>
         </div>
 
@@ -109,191 +100,71 @@
         <div class="singleproduct">
           <!--image and showmore box-->
           <div class="prodimage" id="blackberry">
-            <span class="showmore">Show more</span>
-            <a class="showmorebutton" href="proddetail.html?blackberry">+</a>
             <p class="p1">Blackberry</p>
             <p class="p2">$3.19</p>
           </div>
           <!--dropdown div-->
-          <div class="prodinfo">
-            <!--qty dropdown-->
-            <label for="quantity">Quantity</label>
-              <select name="quantity" class="quantity" required>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-              </select><br>
-              <!--glaze dropdown-->
-              <label for="glaze">Glaze</label>
-                <select name="glaze" class="glaze" required>
-                  <option value="none">None</option>
-                  <option value="sugarmilk">Sugar-milk</option>
-                  <option value="vanillamilk">Vanilla-milk</option>
-                  <option value="doublechocolate">Double-chocolate</option>
-                </select><br>
-              <!--add to cart button-->
-              <a class="addtocart" href="">Add to Cart</a>
+            <div class="prodinfo">
+                <span class="showmore">Show more</span>
+                <div>
+                  <a class="showmorebutton" href="proddetail.html?blackberry">+</a>
+                </div>
+              </div>
           </div>
-        </div>
 
         <!--entire single product box-->
         <div class="singleproduct">
           <div class="prodimage" id="walnut">
-            <span class="showmore">Show more</span>
-            <a class="showmorebutton" href="proddetail.html?walnut">+</a>
             <p class="p1">Walnut</p>
             <p class="p2">$3.19</p>
           </div>
           <div class="prodinfo">
-            <!--qty dropdown-->
-            <label for="quantity">Quantity</label>
-              <select name="quantity" class="quantity" required>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-              </select><br>
-              <!--glaze dropdown-->
-              <label for="glaze">Glaze</label>
-                <select name="glaze" class="glaze" required>
-                  <option value="none">None</option>
-                  <option value="sugarmilk">Sugar-milk</option>
-                  <option value="vanillamilk">Vanilla-milk</option>
-                  <option value="doublechocolate">Double-chocolate</option>
-                </select><br>
-              <!--add to cart button-->
-              <a class="addtocart" href="">Add to Cart</a>
+              <span class="showmore">Show more</span>
+            <div>
+              <a class="showmorebutton" href="proddetail.html?walnut">+</a>
+            </div>
           </div>
         </div>
 
         <!--entire single product box-->
         <div class="singleproduct">
           <div class="prodimage" id="glutenfree">
-            <span class="showmore">Show more</span>
-            <a class="showmorebutton" href="proddetail.html?glutenfree">+</a>
-            <p class="p1">The Original Bun<br> (Gluten Free)</p>
+            <p class="p1">The Original Bun<br>(Gluten Free)</p>
             <p class="p2">$3.40</p>
           </div>
           <div class="prodinfo">
-            <!--qty dropdown-->
-            <label for="quantity">Quantity</label>
-              <select name="quantity" class="quantity" required>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-              </select><br>
-              <!--glaze dropdown-->
-              <label for="glaze">Glaze</label>
-                <select name="glaze" class="glaze" required>
-                  <option value="none">None</option>
-                  <option value="sugarmilk">Sugar-milk</option>
-                  <option value="vanillamilk">Vanilla-milk</option>
-                  <option value="doublechocolate">Double-chocolate</option>
-                </select><br>
-              <!--add to cart button-->
-              <a class="addtocart" href="">Add to Cart</a>
+            <span class="showmore">Show more</span>
+            <div>
+              <a class="showmorebutton" href="proddetail.html?glutenfree">+</a>
+            </div>
           </div>
         </div>
 
         <!--entire single product box-->
         <div class="singleproduct">
           <div class="prodimage" id="pumpkinspice">
-            <span class="showmore">Show more</span>
-            <a class="showmorebutton" href="proddetail.html?pumpkinspice">+</a>
             <p class="p1">Pumpin Spice</p>
             <p class="p2">$3.19</p>
           </div>
           <div class="prodinfo">
-            <!--qty dropdown-->
-            <label for="quantity">Quantity</label>
-              <select name="quantity" class="quantity" required>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-              </select><br>
-              <!--glaze dropdown-->
-              <label for="glaze">Glaze</label>
-                <select name="glaze" class="glaze" required>
-                  <option value="none">None</option>
-                  <option value="sugarmilk">Sugar-milk</option>
-                  <option value="vanillamilk">Vanilla-milk</option>
-                  <option value="doublechocolate">Double-chocolate</option>
-                </select><br>
-                <!--add to cart button-->
-                <a class="addtocart" href="">Add to Cart</a>
+            <span class="showmore">Show more</span>
+            <div>
+              <a class="showmorebutton" href="proddetail.html?pumpkinspice">+</a>
+            </div>
           </div>
         </div>
 
         <!--entire single product box-->
         <div class="singleproduct">
           <div class="prodimage" id="caramelpecan">
-            <span class="showmore">Show more</span>
-            <a class="showmorebutton" href="proddetail.html?caramelpecan">+</a>
             <p class="p1">Caramel Pecan</p>
             <p class="p2">$3.19</p>
           </div>
           <div class="prodinfo">
-            <!--qty dropdown-->
-            <label for="quantity">Quantity</label>
-              <select name="quantity" class="quantity" required>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-              </select><br>
-              <!--glaze dropdown-->
-              <label for="glaze">Glaze</label>
-                <select name="glaze" class="glaze" required>
-                  <option value="none">None</option>
-                  <option value="sugarmilk">Sugar-milk</option>
-                  <option value="vanillamilk">Vanilla-milk</option>
-                  <option value="doublechocolate">Double-chocolate</option>
-                </select><br>
-              <!--add to cart button-->
-              <a class="addtocart" href="">Add to Cart</a>
+            <span class="showmore">Show more</span>
+            <div>
+              <a class="showmorebutton" href="proddetail.html?caramelpecan">+</a>
+            </div>
           </div>
         </div>
       </div>

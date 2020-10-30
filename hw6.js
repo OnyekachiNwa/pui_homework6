@@ -1,3 +1,4 @@
+//function to make selection from product page appear on details page (after clicking show more button)
 function linkingPages() {
 	var link = window.location.href;
 	console.log(link);
@@ -13,30 +14,35 @@ function linkingPages() {
 	};
 };
 
-function addToCart() {
-	var count = document.getElementById("quantitydropdown").value;
-	document.getElementById("cartTotal").innerHTML = count;
-};
-
-//Only thing is now adding multiple items and keeping cart up to up to update
-
-//var productArray = []
+//list for objects/bun items to enter
+var productList =[];
 
 //product class for buns to be purchased
-//class Product {
-	//constructor(price, name, glaze, quantity) {
-		//this.price = price
-		//this.name = name
-		//this.glaze = glaze
-		//this.quantity = quantity
-	//};
-//};
+class Product {
+	constructor(price, glaze, quantity) {
+		this.price = price
+		this.glaze = glaze
+		this.quantity = quantity
+	}
+};
 
-//var quantity = document.getElementById('quantitydropdown').value
-//var quantityTotal = parseInt(quantity)
-//for(var i = 0; i < quantCount; i++) {
-	//var bun = new Product(flavor, quantity, glaze, price)
-	//productArray.push(bun)
-//};
+//add the dropdown value to the cartList
+function addToCart() {
+	//objects for 6b
+	var price = document.getElementById("productprice").value;
+	var glaze = document.getElementById("glazedropdown").value;
+	var quantity = document.getElementById("quantitydropdown").value;
+	//create object instance 6b
+	var purchase = new Product(price, glaze, quantity)
+	//add this to a list
+	productList.push(purchase)
+	//update the list by adding each order of items
+	updateCart(productList.length)
+	//console.log(productList)
+};
 
-//console.log(productArray);
+//the cartTotal is the amount of orders (seen next to shopping cart)
+function updateCart(purchase) {
+	var cartTotal = document.getElementById("cartTotal")
+	cartTotal.innerHTML = purchase
+};

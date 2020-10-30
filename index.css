@@ -10,14 +10,28 @@ html {
   background-size: contain;
 }
 
+header {
+  display: grid;
+  grid-template-columns: 6% 90%;
+  grid-template-rows: 70px;
+  grid-gap: 10px;
+}
+
 #logo {
   position: relative;
   top:3%; left:13%;
 }
 
+#logoimage {
+  width: 68px;
+  height: 68px;
+}
 #logotext {
-  position: absolute;
-  top: 4%; left: 20%;
+  align-self: center;
+}
+
+#bunbunbakeshop {
+  height: 30px;
 }
 
 #backgroundgrid {

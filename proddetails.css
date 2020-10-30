@@ -85,17 +85,17 @@ h1 {
   font-weight: 900;
 }
 
-p1 {
+#p1 {
   font-size: 12px;
 }
 
-h2 {
+#h2 {
   font-size: 16px;
   font-weight: 300;
   margin-top: 20px;
 }
 
-p2 {
+#p2 {
   font-size: 12px;
   font-weight: 100;
 }

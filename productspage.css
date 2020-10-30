@@ -2,8 +2,15 @@
 
 html {
   background-color: #E4DBD4;
-  background-image: url('images/productsfinalimage.png');
   font-family: "Roboto", sans-serif;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 6% 80% 2% 1% 1% 2%;
+  grid-template-rows: 70px;
+  grid-gap: 10px;
+  margin-bottom: 0;
 }
 
 #logo {
@@ -11,26 +18,56 @@ html {
   top:3%; left:13%;
 }
 
+#logoimage {
+  width: 68px;
+  height: 68px;
+}
 #logotext {
-  position: absolute;
-  top: 4%; left: 20%;
+  align-self: center;
+}
+
+#bunbunbakeshop {
+  height: 30px;
+}
+
+#carticon{
+  align-self: center;
+  justify-self: end;
+}
+
+#cartTotal {
+  align-self: center;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+#linedivider {
+  align-self: center;
+  justify-self: end;
+  color: #B49984;
+  font-size: 27px;
+  font-weight: 100;
+}
+
+#hamburgermenu {
+  align-self: center;
 }
 
 #products {
     display: grid;
     grid-template-columns: repeat(3, 200px);
     grid-template-rows: repeat(2,300px);
-    gap: 1em;
+    grid-gap: 1em;
     justify-content: center;
 }
 
 .prodimage {
-    width: 200px;
-    height: 300px;
+    width: 100%;
+    height: 80%;
     background-size: cover;
-    background-repeat: no-repeat;
     opacity: 90%;
     text-align: center;
+    align-content: center;
 }
 
 .p1 {
@@ -38,16 +75,17 @@ html {
   font-weight: 900;
   position: relative;
   top: 15%;
-  margin-bottom: 0;
 }
 
 .p2 {
-  position: absolute;
-  right: 10%; bottom: 35%;
+  margin-top: 10rem;
+  font-weight: 400;
+  font-size: 22px;
 }
 
 #ogbun {
     background-image: url("images/TheOriginalBun.jpg");
+    background-size: cover;
     background-position-x: -125px;
     color: white;
 }
@@ -74,11 +112,17 @@ html {
     background-image: url("images/carmelpecan.jpg");
 }
 
-.singleproduct {
-    width: 200px;
-    position: relative;
-}
+.prodinfo {
 
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-color: #B49984;
+  padding-top: 5px;
+  height: 50px;
+  width: 100%;
+  font-weight: 100;
+  justify-content: center;
+}
 .showmorebutton {
   text-decoration: none;
   text-align: center;
@@ -87,30 +131,16 @@ html {
   width: 2rem;
   height: 2rem;
   line-height: 2rem;
-  background-color: #E5E5E5;
+  background-color: #F0EFCC;
   border-radius: 50%;
 
   position: absolute;
-  right: 5%;
-  top: 3%;
 }
 
 .showmore {
   font-size: 12px;
-  font-weight: 300;
-  position: relative;
-  left: 10%;
-}
-
-.prodinfo {
-  background-color: #B49984;
-  position: absolute;
-  bottom: 0;
-  padding-top: 5px;
-  height: 100px;
-  width: 100%;
   font-weight: 100;
-  text-align: center;
+  justify-self: end;
 }
 
 select {
@@ -141,13 +171,13 @@ select {
 .footer {
   width: 100%;
   height: 2rem;
-
   font-size: 16px;
   color: #B49984;
   align-items: center;
   text-align: center;
-  position: fixed;
+  position: absolute;
   bottom: 0%;
+  background-color: #E4DBD4;
 }
 
 #productfooter {
